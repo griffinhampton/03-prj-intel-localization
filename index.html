@@ -3,7 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Explore Intel's sustainability journey through the ages. Discover how Intel's commitment to innovation has shaped a more sustainable future for technology and our planet, from the founding in 1968 to our 2040 net-zero goals." />
   <title>Intel: Sustainability Through the Ages</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ENjdO4Dr2bkBIFxQpeoYz1C6e3z9e2QZr3z9ZqFf5x1p6u4m9G5f5d5YdQvN0yJ" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -11,7 +14,7 @@
   <!-- Header / Hero Section -->
   <header>
     <div>
-      <img src="img/intel-header-logo.svg" alt="Intel Logo" />
+      <img src="img/intel-header-logo.svg" alt="Intel Logo" width="200" height="100" />
       <!-- Main Heading -->
       <h1>
         Sustainability Through the Ages
@@ -27,122 +30,100 @@
   </header>
 
   <!-- Timeline Cards Section -->
-  <section>
-    <!-- Card 1: 1968 -->
-    <div>
-      <h2>1968</h2>
-      <h3>Intel Founded</h3>
-      <img src="img/1.jpg" alt="Placeholder Image" />
-      <p>
-        Robert Noyce and Gordon Moore rename the newly formed company 
-        NM Electronics to Intel Corporation, laying the foundation for 
-        decades of technological innovation.
-      </p>
-    </div>
+  <section class="timeline-cards container my-5">
+    <h2>Intel's Sustainability Timeline</h2>
+    <div class="timeline-overflow-wrapper">
+      <div class="timeline-scroll d-flex align-items-stretch overflow-auto pb-3">
+        <!-- Card 1: 1968 -->
+      <article class="card flex-shrink-0 me-3" style="min-width: 280px;">
+        <img src="img/1.jpg" class="card-img-top" alt="Intel Founded" width="280" height="160" />
+        <div class="card-body" style="overflow: hidden;">
+          <h3 class="card-title">1968 — Intel Founded</h3>
+          <p class="card-text">Robert Noyce and Gordon Moore rename the newly formed company NM Electronics to Intel Corporation, laying the foundation for decades of technological innovation.</p>
+        </div>
+      </article>
 
-    <!-- Card 2: 1971 -->
-    <div>
-      <h2>1971</h2>
-      <h3>First Microprocessor</h3>
-      <img src="img/2.jpg" alt="Placeholder Image" />
-      <p>
-        Intel debuts the 4004, the world's first commercial microprocessor, 
-        igniting the microprocessor revolution and propelling the future 
-        of computing devices.
-      </p>
-    </div>
+      <!-- Card 2: 1971 -->
+      <article class="card flex-shrink-0 me-3" style="min-width: 280px;">
+        <img src="img/2.jpg" class="card-img-top" alt="First Microprocessor" width="280" height="160" />
+        <div class="card-body">
+          <h3 class="card-title">1971 — First Microprocessor</h3>
+          <p class="card-text">Intel debuts the 4004, the world's first commercial microprocessor, igniting the microprocessor revolution and propelling the future of computing devices.</p>
+        </div>
+      </article>
 
-    <!-- Card 3: 1978 -->
-    <div>
-      <h2>1978</h2>
-      <h3>8086 Processor</h3>
-      <img src="img/3.jpg" alt="Placeholder Image" />
-      <p>
-        Launch of the 8086 processor, establishing the x86 architecture 
-        that drives countless PCs and servers in the modern era.
-      </p>
-    </div>
+      <!-- Card 3: 1978 -->
+      <article class="card flex-shrink-0 me-3" style="min-width: 280px;">
+        <img src="img/3.jpg" class="card-img-top" alt="8086 Processor" width="280" height="160" />
+        <div class="card-body">
+          <h3 class="card-title">1978 — 8086 Processor</h3>
+          <p class="card-text">Launch of the 8086 processor, establishing the x86 architecture that drives countless PCs and servers in the modern era.</p>
+        </div>
+      </article>
 
-    <!-- Card 4: 1985 -->
-    <div>
-      <h2>1985</h2>
-      <h3>386 Processor</h3>
-      <img src="img/4.jpg" alt="Placeholder Image" />
-      <p>
-        Intel introduces the 386 processor with 32-bit architecture, 
-        ushering in a new era of performance and multitasking for 
-        personal computers.
-      </p>
-    </div>
+      <!-- Card 4: 1985 -->
+      <article class="card flex-shrink-0 me-3" style="min-width: 280px;">
+        <img src="img/4.jpg" class="card-img-top" alt="386 Processor" width="280" height="160" />
+        <div class="card-body">
+          <h3 class="card-title">1985 — 386 Processor</h3>
+          <p class="card-text">Intel introduces the 386 processor with 32-bit architecture, ushering in a new era of performance and multitasking for personal computers.</p>
+        </div>
+      </article>
 
-    <!-- Card 5: 2006 -->
-    <div>
-      <h2>2006</h2>
-      <h3>Peak GHG Emissions</h3>
-      <img src="https://placehold.co/250x100" alt="Placeholder Image" />
-      <p>
-        This year marks Intel's highest annual greenhouse gas emissions 
-        for operations. Over subsequent years, Intel invests heavily in 
-        chemical abatement, renewable energy, and energy-efficient 
-        manufacturing to reverse this trend.
-      </p>
-    </div>
+      <!-- Card 5: 2006 -->
+      <article class="card flex-shrink-0 me-3" style="min-width: 280px;">
+        <img src="img/5.jpg" class="card-img-top" alt="Peak GHG Emissions" width="280" height="160" />
+        <div class="card-body">
+          <h3 class="card-title">2006 — Peak GHG Emissions</h3>
+          <p class="card-text">This year marks Intel's highest annual greenhouse gas emissions for operations. Over subsequent years, Intel invests heavily in chemical abatement, renewable energy, and energy-efficient manufacturing to reverse this trend.</p>
+        </div>
+      </article>
 
-    <!-- Card 6: 2020 -->
-    <div>
-      <h2>2020</h2>
-      <h3>RISE Strategy</h3>
-      <img src="https://placehold.co/250x100" alt="Placeholder Image" />
-      <p>
-        Intel launches its RISE (Responsible, Inclusive, Sustainable, 
-        Enabling) strategy and 2030 goals, aiming to drive industry-wide 
-        progress on climate action, water stewardship, and waste reduction.
-      </p>
-    </div>
+      <!-- Card 6: 2020 -->
+      <article class="card flex-shrink-0 me-3" style="min-width: 280px;">
+        <img src="img/6.webp" class="card-img-top" alt="RISE Strategy" width="280" height="160" />
+        <div class="card-body">
+          <h3 class="card-title">2020 — RISE Strategy</h3>
+          <p class="card-text">Intel launches its RISE (Responsible, Inclusive, Sustainable, Enabling) strategy and 2030 goals, aiming to drive industry-wide progress on climate action, water stewardship, and waste reduction.</p>
+        </div>
+      </article>
 
-    <!-- Card 7: 2022 -->
-    <div>
-      <h2>2022</h2>
-      <h3>Net-Zero By 2040</h3>
-      <img src="https://placehold.co/250x100" alt="Placeholder Image" />
-      <p>
-        Intel announces its commitment to achieve net-zero greenhouse 
-        gas emissions (Scope 1 and 2) across its global operations 
-        by 2040, building on years of environmental initiatives.
-      </p>
-    </div>
+      <!-- Card 7: 2022 -->
+      <article class="card flex-shrink-0 me-3" style="min-width: 280px;">
+        <img src="img/7.jpg" class="card-img-top" alt="Net-Zero By 2040" width="280" height="160" />
+        <div class="card-body">
+          <h3 class="card-title">2022 — Net-Zero By 2040</h3>
+          <p class="card-text">Intel announces its commitment to achieve net-zero greenhouse gas emissions (Scope 1 and 2) across its global operations by 2040, building on years of environmental initiatives.</p>
+        </div>
+      </article>
 
-    <!-- Card 8: 2023 -->
-    <div>
-      <h2>2023</h2>
-      <h3>Renewable Electricity</h3>
-      <img src="https://placehold.co/250x100" alt="Placeholder Image" />
-      <p>
-        The company achieves 99% renewable electricity usage worldwide, 
-        helping to drastically lower carbon emissions and driving progress 
-        toward Intel's long-term sustainability goals.
-      </p>
-    </div>
+      <!-- Card 8: 2023 -->
+      <article class="card flex-shrink-0 me-3" style="min-width: 280px;">
+        <img src="img/8.jpg" class="card-img-top" alt="Renewable Electricity" width="280" height="160" />
+        <div class="card-body">
+          <h3 class="card-title">2023 — Renewable Electricity</h3>
+          <p class="card-text">The company achieves 99% renewable electricity usage worldwide, helping to drastically lower carbon emissions and driving progress toward Intel's long-term sustainability goals.</p>
+        </div>
+      </article>
 
-    <!-- Card 9: 2024 -->
-    <div>
-      <h2>2024</h2>
-      <h3>Sustainability Summit</h3>
-      <img src="https://placehold.co/250x100" alt="Placeholder Image" />
-      <p>
-        Intel hosts its first Sustainability Summit, uniting suppliers, 
-        government officials, and industry leaders to collaborate on 
-        next-generation sustainable semiconductor manufacturing.
-      </p>
+      <!-- Card 9: 2024 -->
+      <article class="card flex-shrink-0" style="min-width: 280px;">
+        <img src="img/10.jfif" class="card-img-top" alt="Sustainability Summit" width="280" height="160" />
+        <div class="card-body">
+          <h3 class="card-title">2024 — Sustainability Summit</h3>
+          <p class="card-text">Intel hosts its first Sustainability Summit, uniting suppliers, government officials, and industry leaders to collaborate on next-generation sustainable semiconductor manufacturing.</p>
+        </div>
+      </article>
+    </div>
     </div>
   </section>
 
   <!-- 3-Column Content Section -->
-  <section>
+  <section class="three-column-content container my-5">
     <div>
       
       <!-- Column 1 -->
-      <div>
+      <div style="box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); padding: 1rem; border-radius: 8px; margin: 1rem;">
         <h2>RISE Strategy</h2>
         <p>
           Under its RISE (Responsible, Inclusive, Sustainable, Enabling) strategy, 
@@ -154,7 +135,7 @@
       </div>
 
       <!-- Column 2 -->
-      <div>
+      <div style="box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); padding: 1rem; border-radius: 8px; margin: 1rem;">
         <h2>Commitment</h2>
         <p>
           In 2022, Intel pledged to achieve net-zero greenhouse gas emissions 
@@ -167,7 +148,7 @@
       </div>
 
       <!-- Column 3 -->
-      <div>
+      <div style="box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); padding: 1rem; border-radius: 8px; margin: 1rem;">
         <h2>Water &amp; Waste</h2>
         <p>
           Intel conserves billions of gallons of water annually and 
@@ -183,9 +164,123 @@
   </section>
 
   <!-- Subscription Form -->
-  <section>
+  <section class="subscription-form my-5">
     <h2>Subscribe to our Newsletter</h2>
-    <!-- Add form here -->
+    <p>Stay updated with our latest news and offers!</p>
+
+    <form>
+      <label for="email" class="visually-hidden">Email Address</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+
+      <button type="submit">Subscribe</button>
+    </form>
   </section>
+  
+  <!-- Language Detection and RTL Script -->
+  <script>
+    (function() {
+      // Function to detect if text contains Arabic characters
+      function hasArabicText(text) {
+        const arabicRegex = /[\u0600-\u06FF\u0750-\u077F\u08A0-\u08FF\uFB50-\uFDFF\uFE70-\uFEFF]/;
+        return arabicRegex.test(text);
+      }
+      
+      // Function to set page direction and language
+      function setPageDirection(isRTL, lang) {
+        const htmlElement = document.documentElement;
+        if (isRTL) {
+          htmlElement.setAttribute('dir', 'rtl');
+          htmlElement.setAttribute('lang', lang || 'ar');
+        } else {
+          htmlElement.removeAttribute('dir');
+          htmlElement.setAttribute('lang', lang || 'en');
+        }
+      }
+      
+      // Check for Arabic text in the page content
+      function detectAndSetDirection() {
+        // Get all text content from key elements
+        const headings = document.querySelectorAll('h1, h2, h3');
+        const paragraphs = document.querySelectorAll('p');
+        const buttons = document.querySelectorAll('button');
+        
+        let hasArabic = false;
+        
+        // Check headings
+        headings.forEach(heading => {
+          if (hasArabicText(heading.textContent)) {
+            hasArabic = true;
+          }
+        });
+        
+        // Check paragraphs
+        paragraphs.forEach(paragraph => {
+          if (hasArabicText(paragraph.textContent)) {
+            hasArabic = true;
+          }
+        });
+        
+        // Check buttons
+        buttons.forEach(button => {
+          if (hasArabicText(button.textContent)) {
+            hasArabic = true;
+          }
+        });
+        
+        // Set direction based on detection
+        setPageDirection(hasArabic, hasArabic ? 'ar' : 'en');
+        
+        return hasArabic;
+      }
+      
+      // Run detection when page loads
+      document.addEventListener('DOMContentLoaded', detectAndSetDirection);
+      
+      // Also run detection when content changes (for dynamic content)
+      const observer = new MutationObserver(function(mutations) {
+        let shouldRecheck = false;
+        mutations.forEach(function(mutation) {
+          if (mutation.type === 'childList' || mutation.type === 'characterData') {
+            shouldRecheck = true;
+          }
+        });
+        if (shouldRecheck) {
+          detectAndSetDirection();
+        }
+      });
+      
+      // Start observing changes
+      observer.observe(document.body, {
+        childList: true,
+        subtree: true,
+        characterData: true
+      });
+      
+      // Expose function globally for manual control
+      window.setPageDirection = setPageDirection;
+      window.detectPageDirection = detectAndSetDirection;
+    })();
+  </script>
+  
+  <!-- Horizontal scroll mapping: convert vertical mouse wheel to horizontal scroll for timeline -->
+  <script>
+    (function(){
+      const timeline = document.querySelector('.timeline-scroll');
+      if (!timeline) return;
+
+      // When the user scrolls vertically while over the timeline, scroll horizontally instead.
+      timeline.addEventListener('wheel', function(e){
+        // Only intercept vertical scrolling (deltaY). Allow ctrlKey+wheel (zoom) to pass through
+        if (e.ctrlKey) return;
+
+        // Prevent default vertical scroll
+        e.preventDefault();
+
+        // Adjust scroll speed multiplier as desired
+        const speed = 1; // 1 = default, larger to scroll faster
+        timeline.scrollBy({ left: e.deltaY * speed, behavior: 'smooth' });
+      }, { passive: false });
+    })();
+  </script>
 </body>
 </html>
